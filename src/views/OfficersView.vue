@@ -122,17 +122,18 @@ const { tilt, resetTilt } = useCardTilt()
 .avatar {
   position: relative;
   overflow: hidden;
-  width: 64px;
-  height: 64px;
+  width: 132px;
+  height: 132px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--navy), var(--navy-light));
   color: var(--white);
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1rem;
+  margin: 0 auto 1.25rem;
+  border: 3px solid #e5e9f0;
 }
 
 .avatar img {
