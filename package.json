@@ -1,0 +1,23 @@
+{
+  "name": "tsa-dunlap",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && cp dist/index.html dist/404.html && mkdir -p dist/about dist/events dist/officers dist/join && cp dist/index.html dist/about/index.html && cp dist/index.html dist/events/index.html && cp dist/index.html dist/officers/index.html && cp dist/index.html dist/join/index.html",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.32",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.6",
+    "vite": "^8.0.8",
+    "vite-plugin-vue-devtools": "^8.1.1"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}
