@@ -78,34 +78,48 @@
             </div>
           </div>
           <div class="timeline-item reveal delay-2">
+            <div class="timeline-date">Early September</div>
+            <div class="timeline-content">
+              <h3>Illinois TSA Fall Leadership Conference</h3>
+              <p>A statewide leadership training day for TSA officers and members. Exact date TBD, historically held in early September.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-3">
             <div class="timeline-date">October</div>
             <div class="timeline-content">
               <h3>TechRise Design Sprint</h3>
               <p>Brainstorm and engineer our NASA experiment proposal.</p>
             </div>
           </div>
-          <div class="timeline-item reveal delay-3">
+          <div class="timeline-item reveal delay-4">
+            <div class="timeline-date">Early November</div>
+            <div class="timeline-content">
+              <h3>Technology Day at ISU</h3>
+              <p>Hands-on engineering challenges against students from across Illinois, at the Bone Student Center, Illinois State University. Exact date TBD, historically held the first week of November.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-1">
             <div class="timeline-date">November</div>
             <div class="timeline-content">
               <h3>Submit Proposal to NASA</h3>
               <p>We send in our TechRise entry.</p>
             </div>
           </div>
-          <div class="timeline-item reveal delay-4">
+          <div class="timeline-item reveal delay-2">
             <div class="timeline-date">January</div>
             <div class="timeline-content">
               <h3>Winners Announced</h3>
               <p>NASA picks 60 teams nationwide. Fingers crossed!</p>
             </div>
           </div>
-          <div class="timeline-item reveal delay-1">
+          <div class="timeline-item reveal delay-3">
             <div class="timeline-date">Spring</div>
             <div class="timeline-content">
               <h3>Illinois State Conference</h3>
               <p>We compete against chapters from across Illinois.</p>
             </div>
           </div>
-          <div class="timeline-item reveal delay-2">
+          <div class="timeline-item reveal delay-4">
             <div class="timeline-date">Summer</div>
             <div class="timeline-content">
               <h3>Nationals & Launch</h3>
