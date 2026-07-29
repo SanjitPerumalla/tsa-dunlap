@@ -75,7 +75,7 @@
           <div class="card reveal delay-3" @mousemove="tilt" @mouseleave="resetTilt">
             <h3>Getting Started</h3>
             <p class="card-text">
-              We're recruiting our founding members and officers now, ahead of our first
+              We're recruiting new members and officers now, ahead of our first
               full year as an official chapter.
             </p>
           </div>

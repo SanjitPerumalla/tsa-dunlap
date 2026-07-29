@@ -137,7 +137,7 @@
       <div class="container">
         <h2 class="reveal">Have an event you want us to compete in?</h2>
         <p class="reveal" style="color: var(--gray); margin: 1rem 0 2rem;">
-          Founding members get a say in which events our chapter takes on first.
+          New members get a say in which events our chapter takes on first.
         </p>
         <RouterLink to="/join" class="btn btn-primary reveal" v-magnetic>Join & Have Your Say</RouterLink>
       </div>

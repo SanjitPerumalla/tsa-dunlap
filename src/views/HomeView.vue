@@ -10,7 +10,6 @@
 
       <div class="hero-inner">
         <div class="hero-content reveal">
-          <span class="hero-badge">Founding · Dunlap High School</span>
           <h1>Welcome to <span class="highlight">Dunlap TSA</span></h1>
           <p class="hero-sub">
             We're launching a brand-new chapter of the Technology Student Association at
@@ -58,7 +57,7 @@
           <div class="card reveal delay-3" @mousemove="tilt" @mouseleave="resetTilt">
             <h3>Lead From Day One</h3>
             <p class="card-text">
-              As a founding chapter, every member has the chance to help shape the club and
+              As a new chapter, every member has the chance to help shape the club and
               step into an officer role early.
             </p>
           </div>
@@ -170,20 +169,6 @@ const { tilt, resetTilt } = useCardTilt()
 }
 
 .hero-content { flex: 1.2; }
-
-.hero-badge {
-  display: inline-block;
-  background-color: rgba(200, 16, 46, 0.1);
-  color: var(--scarlet);
-  border: 1px solid rgba(200, 16, 46, 0.3);
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
 
 .hero h1 {
   font-size: 3.6rem;
