@@ -5,8 +5,8 @@
         <span class="eyebrow reveal">Leadership</span>
         <h1 class="reveal">Officers</h1>
         <p class="reveal">
-          As a founding chapter, our officer positions are wide open. This is the earliest
-          and easiest time to step into a leadership role.
+          Several officer positions are still open. This is one of the easiest times
+          to step into a leadership role.
         </p>
       </div>
     </section>
@@ -26,39 +26,54 @@
             <span class="status advisor">Co-President</span>
             <p>Co-leads chapter meetings, represents Dunlap TSA at state events, and helps set the vision for our first year.</p>
           </div>
-          <div class="officer-card reveal delay-3" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">?</div>
-            <h3>Vice President</h3>
-            <span class="status open">Open: Founding Position</span>
+          <div class="officer-card reveal delay-4" @mousemove="tilt" @mouseleave="resetTilt">
+            <div class="avatar">KH</div>
+            <h3>Keyaan Hossain</h3>
+            <span class="status advisor">Vice President</span>
             <p>Supports the co-presidents, coordinates competitive event teams, and helps run meetings.</p>
-          </div>
-          <div class="officer-card reveal delay-3" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">?</div>
-            <h3>Secretary</h3>
-            <span class="status open">Open: Founding Position</span>
-            <p>Keeps meeting notes, tracks membership, and manages chapter communications.</p>
           </div>
           <div class="officer-card reveal delay-1" @mousemove="tilt" @mouseleave="resetTilt">
             <div class="avatar">?</div>
-            <h3>Treasurer</h3>
-            <span class="status open">Open: Founding Position</span>
-            <p>Manages chapter dues, fundraising, and competition/travel budgets.</p>
+            <h3>Secretary</h3>
+            <span class="status open">Open</span>
+            <p>Keeps meeting notes, tracks membership, and manages chapter communications.</p>
           </div>
           <div class="officer-card reveal delay-2" @mousemove="tilt" @mouseleave="resetTilt">
             <div class="avatar">?</div>
-            <h3>Historian / Media</h3>
-            <span class="status open">Open: Founding Position</span>
-            <p>Documents chapter events and runs our social media and this website.</p>
+            <h3>Treasurer</h3>
+            <span class="status open">Open</span>
+            <p>Manages chapter dues, fundraising, and competition/travel budgets.</p>
           </div>
           <div class="officer-card reveal delay-3" @mousemove="tilt" @mouseleave="resetTilt">
+            <div class="avatar">?</div>
+            <h3>Sergeant at Arms</h3>
+            <span class="status open">Open</span>
+            <p>Keeps meetings on track and helps run officer elections and voting.</p>
+          </div>
+          <div class="officer-card reveal delay-4" @mousemove="tilt" @mouseleave="resetTilt">
+            <div class="avatar">?</div>
+            <h3>Reporter</h3>
+            <span class="status open">Open</span>
+            <p>Documents chapter events and runs our social media and this website.</p>
+          </div>
+          <div class="officer-card reveal delay-1" @mousemove="tilt" @mouseleave="resetTilt">
             <div class="avatar">K</div>
             <h3>Chapter Advisor</h3>
             <span class="status advisor">Faculty Advisor</span>
             <p>Mr. Klaus oversees the chapter and coordinates with Dunlap High School administration.</p>
           </div>
+          <div class="officer-card reveal delay-2" @mousemove="tilt" @mouseleave="resetTilt">
+            <div class="avatar">CM</div>
+            <h3>Chris Merrill</h3>
+            <span class="status advisor">Illinois TSA State Advisor</span>
+            <p>
+              <a href="mailto:cpmerri@ilstu.edu">cpmerri@ilstu.edu</a><br>
+              <a href="tel:+13094387862">309-438-7862</a>
+            </p>
+          </div>
         </div>
         <p class="placeholder-note reveal">
-          Officer names will be added here once our first elections are held.
+          Secretary, Treasurer, Sergeant at Arms, and Reporter are still open. Officer names will be added here once elections are held.
         </p>
       </div>
     </section>
@@ -67,7 +82,7 @@
       <div class="container">
         <h2 class="reveal">Interested in running for an officer position?</h2>
         <p class="reveal">
-          Founding officers help shape everything from our first competitive events to how we run meetings.
+          Officers help shape everything from our first competitive events to how we run meetings.
         </p>
         <RouterLink to="/join" class="btn btn-primary reveal" v-magnetic>Express Interest</RouterLink>
       </div>
@@ -174,6 +189,11 @@ const { tilt, resetTilt } = useCardTilt()
   color: var(--gray);
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+.officer-card p a {
+  color: var(--navy);
+  font-weight: 600;
 }
 
 .placeholder-note {

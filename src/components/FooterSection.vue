@@ -30,11 +30,11 @@
         <div class="footer-contact">
           <h4>Contact</h4>
           <ul>
-            <li><a href="mailto:dunlaphstsa@gmail.com">dunlaphstsa@gmail.com</a></li>
+            <li><a href="mailto:dunlaptsa@gmail.com">dunlaptsa@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/dunlaphighschool_tsa" target="_blank" rel="noopener">@dunlaphighschool_tsa</a></li>
             <li><a href="https://tsaweb.org" target="_blank" rel="noopener">National TSA (tsaweb.org)</a></li>
             <li><a href="https://www.iltsa.org" target="_blank" rel="noopener">Illinois TSA</a></li>
           </ul>
-          <p class="placeholder-note">Contact info is a placeholder. Update with your advisor's email.</p>
         </div>
       </div>
 

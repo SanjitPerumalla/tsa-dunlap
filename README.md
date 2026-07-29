@@ -6,10 +6,9 @@ Built with Vue 3 + Vite + Vue Router.
 
 ## Placeholders to update before launch
 
-- `src/components/FooterSection.vue` — chapter email (`dunlaphstsa@gmail.com`)
-- `src/views/JoinView.vue` — chapter email used by the interest form, dues amount
-- `src/views/EventsView.vue` — meeting day/time, room, advisor name
-- `src/views/OfficersView.vue` — advisor name, officer names once elected
+- `src/views/JoinView.vue` — dues amount, QR code destination once the real form is finalized
+- `src/views/EventsView.vue` — room number, exact dates for Leadership Conference and Technology Day
+- `src/views/OfficersView.vue` — Secretary, Treasurer, Sergeant at Arms, and Reporter once elected
 
 ## Project Setup
 

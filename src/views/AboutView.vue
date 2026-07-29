@@ -53,8 +53,9 @@
         <h2 class="section-title reveal">Our Chapter's Story</h2>
         <div class="divider"></div>
         <p class="section-subtitle reveal">
-          Dunlap TSA is being founded to give Dunlap High School students a dedicated home
-          for STEM competition and leadership.
+          Officially chartered as the <strong>White Cap Chapter</strong> of Dunlap High
+          School, TSA is being founded to give Dunlap students a dedicated home for STEM
+          competition and leadership.
         </p>
         <div class="grid-3">
           <div class="card reveal delay-1" @mousemove="tilt" @mouseleave="resetTilt">
