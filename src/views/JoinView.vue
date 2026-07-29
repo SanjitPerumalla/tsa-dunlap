@@ -3,10 +3,10 @@
     <section class="page-header">
       <div class="container">
         <span class="eyebrow reveal">Join Us</span>
-        <h1 class="reveal">Become a Founding Member</h1>
+        <h1 class="reveal">Become a member today!</h1>
         <p class="reveal">
-          No experience required, just curiosity about STEM. Fill out the form below and
-          we'll follow up with meeting details.
+          No experience required, just curiosity about STEM. Scan the code below to fill
+          out our interest form.
         </p>
       </div>
     </section>
@@ -41,55 +41,24 @@
           </ol>
         </div>
 
-        <form class="interest-form reveal delay-2" @submit.prevent="submitInterest">
-          <h2>Interest Form</h2>
-          <div class="field">
-            <label for="name">Full name</label>
-            <input id="name" v-model="form.name" type="text" required />
+        <div class="qr-card reveal delay-2">
+          <h2>Scan to Join</h2>
+          <div class="qr-code">
+            <img src="/images/join-qr.svg" alt="QR code to the interest form" />
           </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" v-model="form.email" type="email" required />
-          </div>
-          <div class="field">
-            <label for="grade">Grade</label>
-            <select id="grade" v-model="form.grade" required>
-              <option value="" disabled>Select grade</option>
-              <option>9th</option>
-              <option>10th</option>
-              <option>11th</option>
-              <option>12th</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="interest">What interests you about TSA?</label>
-            <textarea id="interest" v-model="form.interest" rows="4"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary submit-btn">Submit Interest</button>
           <p class="form-note">
-            This opens an email to our chapter inbox. No data is stored on this site.
+            Placeholder QR code. Will link to our Google Form interest form once it's ready.
           </p>
-        </form>
+        </div>
       </div>
     </section>
   </main>
 </template>
 
 <script setup>
-import { reactive } from 'vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 
 useScrollReveal()
-
-const form = reactive({ name: '', email: '', grade: '', interest: '' })
-
-function submitInterest() {
-  const subject = encodeURIComponent('Dunlap TSA Interest Form')
-  const body = encodeURIComponent(
-    `Name: ${form.name}\nEmail: ${form.email}\nGrade: ${form.grade}\n\nWhat interests you about TSA?\n${form.interest}`
-  )
-  window.location.href = `mailto:dunlaphstsa@gmail.com?subject=${subject}&body=${body}`
-}
 </script>
 
 <style scoped>
@@ -164,61 +133,39 @@ function submitInterest() {
   line-height: 1.6;
 }
 
-.interest-form {
+.qr-card {
   background-color: var(--gray-light);
   border-radius: 14px;
   padding: 2.5rem;
   border: 1px solid #e5e9f0;
+  text-align: center;
 }
 
-.interest-form h2 {
+.qr-card h2 {
   color: var(--navy);
   margin-bottom: 1.5rem;
 }
 
-.field {
-  margin-bottom: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.field label {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--gray-dark);
-}
-
-.field input,
-.field select,
-.field textarea {
-  padding: 0.7rem 0.9rem;
-  border-radius: 8px;
-  border: 1px solid #d1d9e6;
-  font-family: inherit;
-  font-size: 0.95rem;
+.qr-code {
   background-color: var(--white);
-  color: var(--text-dark);
+  border: 1px solid #e5e9f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 260px;
+  margin: 0 auto;
 }
 
-.field input:focus,
-.field select:focus,
-.field textarea:focus {
-  outline: none;
-  border-color: var(--navy);
-}
-
-.submit-btn {
+.qr-code img {
   width: 100%;
-  border: none;
-  margin-top: 0.5rem;
+  height: auto;
+  display: block;
 }
 
 .form-note {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   font-size: 0.82rem;
   color: var(--gray);
-  text-align: center;
+  font-style: italic;
 }
 
 @media (max-width: 900px) {
