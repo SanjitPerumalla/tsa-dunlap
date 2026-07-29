@@ -37,53 +37,84 @@
 
     <section class="section alt-bg">
       <div class="container">
-        <h2 class="section-title reveal">Competitive Events We're Exploring</h2>
+        <span class="eyebrow reveal" style="display:block; text-align:center; margin-bottom: 0.5rem;">This Year's Big Mission</span>
+        <h2 class="section-title reveal">NASA TechRise</h2>
         <p class="section-subtitle reveal">
-          TSA offers 50+ competitive events nationally. As a founding chapter, members will
-          help choose which ones we compete in first.
+          We're designing a real science experiment and pitching it to NASA. Winning teams
+          build their payload and fly it to the edge of space on a NASA-sponsored
+          high-altitude balloon. Our idea, the actual stratosphere.
         </p>
-        <div class="grid-2">
-          <div class="cat-card reveal delay-1" @mousemove="tilt" @mouseleave="resetTilt">
-            <h3>Design & Engineering</h3>
-            <ul>
-              <li>Engineering Design</li>
-              <li>Architectural Design</li>
-              <li>System Control Technology</li>
-              <li>Flight Endurance</li>
-            </ul>
+        <div class="mission-stats reveal">
+          <div class="mission-stat">
+            <span class="mission-num">95,000</span>
+            <span class="mission-label">feet, flight altitude</span>
           </div>
-          <div class="cat-card reveal delay-2" @mousemove="tilt" @mouseleave="resetTilt">
-            <h3>Coding & Technology</h3>
-            <ul>
-              <li>Coding</li>
-              <li>Web Design/Development</li>
-              <li>Video Game Design</li>
-              <li>Virtual Reality Design</li>
-            </ul>
+          <div class="mission-stat">
+            <span class="mission-num">4–8 hrs</span>
+            <span class="mission-label">in the stratosphere</span>
           </div>
-          <div class="cat-card reveal delay-3" @mousemove="tilt" @mouseleave="resetTilt">
-            <h3>Communication & Leadership</h3>
-            <ul>
-              <li>Extemporaneous Speech</li>
-              <li>Debating Technological Issues</li>
-              <li>Chapter Team</li>
-              <li>Prepared Presentation</li>
-            </ul>
+          <div class="mission-stat">
+            <span class="mission-num">$1,500</span>
+            <span class="mission-label">NASA award to build it</span>
           </div>
-          <div class="cat-card reveal delay-4" @mousemove="tilt" @mouseleave="resetTilt">
-            <h3>Science & Research</h3>
-            <ul>
-              <li>Biotechnology Design</li>
-              <li>Forensic Science</li>
-              <li>Technology Bowl</li>
-              <li>STEM Talk</li>
-            </ul>
+          <div class="mission-stat">
+            <span class="mission-num">60</span>
+            <span class="mission-label">winning teams nationwide</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title reveal">This Year's Timeline</h2>
+        <div class="divider"></div>
+        <div class="timeline">
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-date">Aug &ndash; Sep</div>
+            <div class="timeline-content">
+              <h3>Kickoff & Join</h3>
+              <p>First meetings, meet the team, and pick your events.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-2">
+            <div class="timeline-date">October</div>
+            <div class="timeline-content">
+              <h3>TechRise Design Sprint</h3>
+              <p>Brainstorm and engineer our NASA experiment proposal.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-3">
+            <div class="timeline-date">November</div>
+            <div class="timeline-content">
+              <h3>Submit Proposal to NASA</h3>
+              <p>We send in our TechRise entry.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-4">
+            <div class="timeline-date">January</div>
+            <div class="timeline-content">
+              <h3>Winners Announced</h3>
+              <p>NASA picks 60 teams nationwide. Fingers crossed!</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-date">Spring</div>
+            <div class="timeline-content">
+              <h3>Illinois State Conference</h3>
+              <p>We compete against chapters from across Illinois.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-2">
+            <div class="timeline-date">Summer</div>
+            <div class="timeline-content">
+              <h3>Nationals & Launch</h3>
+              <p>National TSA Conference, plus our TechRise balloon flight.</p>
+            </div>
           </div>
         </div>
         <p class="placeholder-note reveal" style="text-align:center; margin-top: 2rem">
-          Final event lineup depends on Illinois TSA's current-year event list. Check
-          <a href="https://www.illinoistsa.org" target="_blank" rel="noopener">illinoistsa.org</a>
-          for the official roster.
+          Exact dates will be announced at meetings. Stay tuned!
         </p>
       </div>
     </section>
@@ -102,10 +133,8 @@
 
 <script setup>
 import { useScrollReveal } from '@/composables/useScrollReveal'
-import { useCardTilt } from '@/composables/useCardTilt'
 
 useScrollReveal()
-const { tilt, resetTilt } = useCardTilt()
 </script>
 
 <style scoped>
@@ -178,44 +207,94 @@ const { tilt, resetTilt } = useCardTilt()
   background-color: var(--white);
 }
 
-.cat-card {
-  background-color: var(--gray-light);
-  border-radius: 14px;
-  padding: 1.75rem 2rem;
-  border: 1px solid #e5e9f0;
+.mission-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.cat-card h3 {
+.mission-stat {
+  text-align: center;
+  border-top: 4px solid var(--scarlet);
+  padding-top: 1rem;
+}
+
+.mission-num {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.9rem;
   color: var(--navy);
-  margin-bottom: 1rem;
 }
 
-.cat-card ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+.mission-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 0.4rem;
 }
 
-.cat-card li {
-  color: var(--gray-dark);
-  font-size: 0.95rem;
-  padding-left: 1.2rem;
+.timeline {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timeline-item {
   position: relative;
+  padding-left: 2.25rem;
+  padding-bottom: 2.5rem;
 }
 
-.cat-card li::before {
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0.5em;
-  width: 6px;
-  height: 6px;
+  top: 0.35rem;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: var(--scarlet);
 }
 
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 1.2rem;
+  bottom: -1.5rem;
+  width: 2px;
+  background-color: #e5e9f0;
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--scarlet);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content h3 {
+  color: var(--text-dark);
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content p {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
 @media (max-width: 700px) {
   .meeting-card { grid-template-columns: 1fr; }
+  .mission-stats { grid-template-columns: repeat(2, 1fr); }
 }
 </style>

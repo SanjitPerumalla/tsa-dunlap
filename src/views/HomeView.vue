@@ -17,7 +17,7 @@
             Dunlap High School, a place for students who love STEM to build, compete, and lead.
           </p>
           <div class="hero-buttons">
-            <RouterLink to="/join" class="btn btn-primary" v-magnetic>Join the Founding Class</RouterLink>
+            <RouterLink to="/join" class="btn btn-primary" v-magnetic>Join TSA!</RouterLink>
             <RouterLink to="/about" class="btn btn-outline" v-magnetic>What is TSA?</RouterLink>
           </div>
         </div>

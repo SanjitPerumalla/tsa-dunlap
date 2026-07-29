@@ -2,7 +2,7 @@
   <div class="topbar">
     <div class="topbar-inner">
       <a href="https://tsaweb.org" target="_blank" rel="noopener">National TSA ↗</a>
-      <a href="https://www.illinoistsa.org" target="_blank" rel="noopener">Illinois TSA ↗</a>
+      <a href="https://www.iltsa.org" target="_blank" rel="noopener">Illinois TSA ↗</a>
     </div>
   </div>
   <nav class="navbar">
