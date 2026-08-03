@@ -27,7 +27,7 @@
             <p>Co-leads chapter meetings, represents Dunlap TSA at state events, and helps set the vision for our first year.</p>
           </div>
           <div class="officer-card reveal delay-4" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">KH</div>
+            <div class="avatar">KH<img :src="'/photos/keyaan.jpg'" alt="Keyaan Hossain" @error="e => e.target.style.display='none'" /></div>
             <h3>Keyaan Hossain</h3>
             <span class="status advisor">Vice President</span>
             <p>Supports the co-presidents, coordinates competitive event teams, and helps run meetings.</p>
