@@ -26,7 +26,7 @@
           </div>
           <div class="meeting-item">
             <span class="meeting-label">Advisor</span>
-            <span class="meeting-value">Mr. Klaus</span>
+            <span class="meeting-value">Mrs. Scott</span>
           </div>
         </div>
         <p class="placeholder-note reveal">

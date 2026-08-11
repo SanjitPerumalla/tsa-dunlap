@@ -57,10 +57,10 @@
             <p>Documents chapter events and runs our social media and this website.</p>
           </div>
           <div class="officer-card reveal delay-1" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">K</div>
+            <div class="avatar">S</div>
             <h3>Chapter Advisor</h3>
             <span class="status advisor">Faculty Advisor</span>
-            <p>Mr. Klaus oversees the chapter and coordinates with Dunlap High School administration.</p>
+            <p>Mrs. Scott oversees the chapter and coordinates with Dunlap High School administration.</p>
           </div>
           <div class="officer-card reveal delay-2" @mousemove="tilt" @mouseleave="resetTilt">
             <div class="avatar">CM</div>
