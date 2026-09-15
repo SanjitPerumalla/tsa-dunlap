@@ -5,8 +5,7 @@
         <span class="eyebrow reveal">Leadership</span>
         <h1 class="reveal">Officers</h1>
         <p class="reveal">
-          Several officer positions are still open. This is one of the easiest times
-          to step into a leadership role.
+          Meet the students and advisors leading Dunlap TSA in our first year.
         </p>
       </div>
     </section>
@@ -33,28 +32,40 @@
             <p>Supports the co-presidents, coordinates competitive event teams, and helps run meetings.</p>
           </div>
           <div class="officer-card reveal delay-1" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">?</div>
-            <h3>Secretary</h3>
-            <span class="status open">Open</span>
+            <div class="avatar">KB<img :src="'/photos/katherine.jpg'" alt="Katherine Brewer" @error="e => e.target.style.display='none'" /></div>
+            <h3>Katherine Brewer</h3>
+            <span class="status advisor">Secretary</span>
             <p>Keeps meeting notes, tracks membership, and manages chapter communications.</p>
           </div>
           <div class="officer-card reveal delay-2" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">?</div>
-            <h3>Treasurer</h3>
-            <span class="status open">Open</span>
+            <div class="avatar">NR<img :src="'/photos/nicolas.jpg'" alt="Nicolas Raymond" @error="e => e.target.style.display='none'" /></div>
+            <h3>Nicolas Raymond</h3>
+            <span class="status advisor">Treasurer</span>
             <p>Manages chapter dues, fundraising, and competition/travel budgets.</p>
           </div>
           <div class="officer-card reveal delay-3" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">?</div>
-            <h3>Sergeant at Arms</h3>
-            <span class="status open">Open</span>
+            <div class="avatar">R<img :src="'/photos/rafin.jpg'" alt="Rafin" @error="e => e.target.style.display='none'" /></div>
+            <h3>Rafin</h3>
+            <span class="status advisor">Sergeant at Arms</span>
             <p>Keeps meetings on track and helps run officer elections and voting.</p>
           </div>
           <div class="officer-card reveal delay-4" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">?</div>
-            <h3>Reporter</h3>
-            <span class="status open">Open</span>
+            <div class="avatar">AK<img :src="'/photos/abhi.jpg'" alt="Abhi Kothamachu" @error="e => e.target.style.display='none'" /></div>
+            <h3>Abhi Kothamachu</h3>
+            <span class="status advisor">Reporter</span>
             <p>Documents chapter events and runs our social media and this website.</p>
+          </div>
+          <div class="officer-card reveal delay-1" @mousemove="tilt" @mouseleave="resetTilt">
+            <div class="avatar">TY<img :src="'/photos/tommy.jpg'" alt="Tommy Ye" @error="e => e.target.style.display='none'" /></div>
+            <h3>Tommy Ye</h3>
+            <span class="status advisor">Upperclassman Representative</span>
+            <p>Represents upperclassman members' interests and helps bridge new and returning members.</p>
+          </div>
+          <div class="officer-card reveal delay-2" @mousemove="tilt" @mouseleave="resetTilt">
+            <div class="avatar">RM<img :src="'/photos/rithvik.jpg'" alt="Rithvik Meduru" @error="e => e.target.style.display='none'" /></div>
+            <h3>Rithvik Meduru</h3>
+            <span class="status advisor">Underclassman Representative</span>
+            <p>Represents underclassman members' interests and helps new members get involved.</p>
           </div>
           <div class="officer-card reveal delay-1" @mousemove="tilt" @mouseleave="resetTilt">
             <div class="avatar">S</div>
@@ -72,19 +83,16 @@
             </p>
           </div>
         </div>
-        <p class="placeholder-note reveal">
-          Secretary, Treasurer, Sergeant at Arms, and Reporter are still open. Officer names will be added here once elections are held.
-        </p>
       </div>
     </section>
 
     <section class="section founding-section" style="text-align:center">
       <div class="container">
-        <h2 class="reveal">Interested in running for an officer position?</h2>
+        <h2 class="reveal">Want to get involved?</h2>
         <p class="reveal">
-          Officers help shape everything from our first competitive events to how we run meetings.
+          Members help shape everything from our first competitive events to how we run meetings.
         </p>
-        <RouterLink to="/join" class="btn btn-primary reveal" v-magnetic>Express Interest</RouterLink>
+        <RouterLink to="/join" class="btn btn-primary reveal" v-magnetic>Join Dunlap TSA</RouterLink>
       </div>
     </section>
   </main>
