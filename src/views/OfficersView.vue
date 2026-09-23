@@ -56,8 +56,8 @@
             <p>Documents chapter events and runs our social media and this website.</p>
           </div>
           <div class="officer-card reveal delay-1" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">TY<img :src="'/photos/tommy.jpg'" alt="Tommy Ye" @error="e => e.target.style.display='none'" /></div>
-            <h3>Tommy Ye</h3>
+            <div class="avatar">TY<img :src="'/photos/tommy.jpg'" alt="Thomas Yeh" @error="e => e.target.style.display='none'" /></div>
+            <h3>Thomas Yeh</h3>
             <span class="status advisor">Upperclassman Representative</span>
             <p>Represents upperclassman members' interests and helps bridge new and returning members.</p>
           </div>
