@@ -44,8 +44,8 @@
             <p>Manages chapter dues, fundraising, and competition/travel budgets.</p>
           </div>
           <div class="officer-card reveal delay-3" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">R<img :src="'/photos/rafin.jpg'" alt="Rafin" @error="e => e.target.style.display='none'" /></div>
-            <h3>Rafin</h3>
+            <div class="avatar">RA<img :src="'/photos/rafin.jpg'" alt="Rafin Ahmed" @error="e => e.target.style.display='none'" /></div>
+            <h3>Rafin Ahmed</h3>
             <span class="status advisor">Sergeant at Arms</span>
             <p>Keeps meetings on track and helps run officer elections and voting.</p>
           </div>
