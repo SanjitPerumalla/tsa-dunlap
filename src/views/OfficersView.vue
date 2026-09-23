@@ -68,9 +68,9 @@
             <p>Represents underclassman members' interests and helps new members get involved.</p>
           </div>
           <div class="officer-card reveal delay-1" @mousemove="tilt" @mouseleave="resetTilt">
-            <div class="avatar">S</div>
-            <h3>Chapter Advisor</h3>
-            <span class="status advisor">Faculty Advisor</span>
+            <div class="avatar">CS</div>
+            <h3>Courtney Scott</h3>
+            <span class="status advisor">Chapter Advisor</span>
             <p>Mrs. Scott oversees the chapter and coordinates with Dunlap High School administration.</p>
           </div>
           <div class="officer-card reveal delay-2" @mousemove="tilt" @mouseleave="resetTilt">
